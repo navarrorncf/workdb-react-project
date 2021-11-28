@@ -1,0 +1,119 @@
+table.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+table.table thead th {
+  color: #3b6fdf;
+  font-size: 1.8rem;
+  border-bottom: solid 2px #000a;
+}
+
+table.table thead th span {
+  color: #bbb;
+  font-size: 2.4rem;
+  display: inline-block;
+}
+
+table.table thead th.current-key span {
+  color: #00853c;
+  transition: all 0.1s;
+}
+
+table.table thead th.current-key.descending span {
+  transform: rotateX(180deg) translateY(-7px);
+}
+
+table.table thead th:not(.actions) {
+  cursor: pointer;
+}
+
+table.table thead th.actions {
+  min-width: 10rem;
+}
+
+table.table thead th:not(.actions):hover {
+  background: #0001;
+}
+
+table.table thead th input {
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+table.table thead th input::placeholder {
+  color: #000;
+  opacity: 0.5;
+  text-align: center;
+}
+
+table.table td {
+  font-size: 1.4rem;
+  min-width: 10rem;
+  border-bottom: solid 1px #0005;
+  text-align: center;
+}
+
+table.table td.age,
+table.table th.age {
+  max-width: 7rem;
+}
+
+table.table td.height,
+table.table th.height {
+  max-width: 9rem;
+}
+
+table.table td.birthdate,
+table.table th.birthdate {
+  max-width: 9rem;
+}
+
+table.table th:not(.action) {
+  padding: 0 1rem;
+}
+
+table.table td:not(.action) {
+  padding: 1.5rem 1rem 0.5rem 1rem;
+}
+
+table.table td.space-out {
+  letter-spacing: 1px;
+}
+
+table.table th button.remove,
+table.table td button.remove {
+  border: none;
+  color: #333;
+  background: #ff00001a;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  transform: translateY(-3px);
+}
+
+table.table th button.remove:hover:not(:active),
+table.table td button.remove:hover:not(:active) {
+  transform: translateY(-4px);
+  box-shadow: 0 1px 3px 0 #0003;
+}
+
+table.table td button.remove span {
+  color: #a00;
+}
+
+.no-data {
+  padding: 2rem;
+}
+
+.no-data p {
+  background: #f001;
+  text-align: center;
+  padding: 1rem;
+}

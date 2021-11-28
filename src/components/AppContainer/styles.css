@@ -1,0 +1,16 @@
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+
+.app {
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 3.6rem;
+}

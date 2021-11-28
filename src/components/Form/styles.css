@@ -1,0 +1,29 @@
+.form-container {
+  background: #fbfbfb;
+  width: 44rem;
+  margin: 0 auto;
+  padding: 3rem;
+  /* font-size: 1.8rem; */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 1px #0004;
+}
+
+.form-container .logo {
+  width: 6rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.form {
+  margin: 0 auto;
+}
+
+.form input[type='number'],
+.form .rdt input {
+  width: 18rem;
+}
+
+.form input::placeholder {
+  color: #aaa;
+}
